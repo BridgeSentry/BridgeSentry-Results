@@ -1,0 +1,32 @@
+run_info:
+  out_dir: /home/gonca/Documents/GitHub/IST-Thesis/BridgeDefender/outputs/20260716-single-internaltx-comparison-xchainwatcher-ronin2-omni-nomad-polyn-qubit-harmony-thor123-meter-ronin1/train_fullnomad_epochs100_augment0_lr0.005_nosf_es15_ts0.0_202607221010/inference_single-xchainwatcher-fullnomad_202607221015
+  run_datetime: '2026-07-22T10:15:06'
+  checkpoint_dir: /home/gonca/Documents/GitHub/IST-Thesis/BridgeDefender/outputs/20260716-single-internaltx-comparison-xchainwatcher-ronin2-omni-nomad-polyn-qubit-harmony-thor123-meter-ronin1/train_fullnomad_epochs100_augment0_lr0.005_nosf_es15_ts0.0_202607221010/models
+dataset:
+  type: single
+  path: /home/gonca/Documents/GitHub/IST-Thesis/BridgeDefender/outputs/20260716-single-internaltx-comparison-xchainwatcher-ronin2-omni-nomad-polyn-qubit-harmony-thor123-meter-ronin1/train_fullnomad_epochs100_augment0_lr0.005_nosf_es15_ts0.0_202607221010/_dataset_test_fullnomad
+  stats:
+    total_samples: 730
+    normal_samples: 563
+    anomaly_samples: 167
+    anomaly_ratio: 0.2288
+    bridges:
+    - name: nomad
+      num_samples: 730
+      normal_samples: 563
+      anomaly_samples: 167
+      anomaly_ratio: 0.2288
+      bridge_ratio: 1.0
+params:
+  act: relu
+  att_drop: 0.0
+  dropout: 0.5
+  first_layer_channels: 128
+  hidden_channels: 64
+  input_drop: 0.0
+  n_fp_layers: 2
+  n_mlp_layers: 2
+  out_channels: 2
+  pooling: mean
+  residual: false
+  rm_semantic_fusion: true

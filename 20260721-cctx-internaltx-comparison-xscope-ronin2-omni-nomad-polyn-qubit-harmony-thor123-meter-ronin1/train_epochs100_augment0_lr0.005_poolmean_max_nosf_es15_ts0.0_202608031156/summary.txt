@@ -1,0 +1,2 @@
+=== K-Fold test summary (mean ± std across folds) ===
+  Avg fold training time     317.34s ± 104.14s

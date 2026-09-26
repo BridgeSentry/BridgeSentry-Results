@@ -1,0 +1,16 @@
+=== K-Fold test summary (mean ± std across folds) ===
+  Test loss                  0.1122 ± 0.0090
+  Accuracy                   0.9621 ± 0.0040
+  Precision  (normal)        0.9882 ± 0.0027
+  Recall     (normal)        0.9703 ± 0.0066
+  F1-score   (normal)        0.9791 ± 0.0023
+  Precision  (anomaly)       0.7299 ± 0.0397
+  Recall     (anomaly)       0.8720 ± 0.0299
+  F1-score   (anomaly)       0.7932 ± 0.0136
+  ROC-AUC                    0.9782 ± 0.0077
+  PR-AUC                     0.8809 ± 0.0225
+  MCC                        0.7772 ± 0.0133
+
+Using max pooling, in comparison to mean pooling 
+causes a small reduction to overall accuracy, as well as reduction in precision
+for the anomaly class. Not worth changing.

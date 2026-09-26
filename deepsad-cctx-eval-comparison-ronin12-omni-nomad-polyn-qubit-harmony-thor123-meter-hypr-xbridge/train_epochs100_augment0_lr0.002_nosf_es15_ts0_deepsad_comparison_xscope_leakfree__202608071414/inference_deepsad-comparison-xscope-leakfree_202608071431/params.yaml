@@ -1,0 +1,44 @@
+run_info:
+  out_dir: /home/gonca/Documents/GitHub/IST-Thesis/BridgeDefender/outputs/cctx-eval-comparison-ronin12-omni-nomad-polyn-qubit-harmony-thor123-meter-hypr-xbridge/train_epochs100_augment0_lr0.002_nosf_es15_ts0_deepsad_comparison_xscope_leakfree__202608071414/inference_deepsad-comparison-xscope-leakfree_202608071431
+  run_datetime: '2026-08-07T14:31:28'
+  checkpoint_dir: /home/gonca/Documents/GitHub/IST-Thesis/BridgeDefender/outputs/cctx-eval-comparison-ronin12-omni-nomad-polyn-qubit-harmony-thor123-meter-hypr-xbridge/train_epochs100_augment0_lr0.002_nosf_es15_ts0_deepsad_comparison_xscope_leakfree__202608071414/models
+dataset:
+  type: cctx
+  path: /home/gonca/Documents/GitHub/IST-Thesis/BridgeDefender/outputs/cctx-eval-comparison-ronin12-omni-nomad-polyn-qubit-harmony-thor123-meter-hypr-xbridge/_dataset_test_xscope_leakfree
+  stats:
+    total_samples: 35
+    normal_samples: 11
+    anomaly_samples: 24
+    anomaly_ratio: 0.6857
+    bridges:
+    - name: qubit
+      num_samples: 27
+      normal_samples: 11
+      anomaly_samples: 16
+      anomaly_ratio: 0.5926
+      bridge_ratio: 0.7714
+    - name: thorchain3
+      num_samples: 6
+      normal_samples: 0
+      anomaly_samples: 6
+      anomaly_ratio: 1.0
+      bridge_ratio: 0.1714
+    - name: thorchain2
+      num_samples: 2
+      normal_samples: 0
+      anomaly_samples: 2
+      anomaly_ratio: 1.0
+      bridge_ratio: 0.0571
+params:
+  act: relu
+  att_drop: 0.0
+  dropout: 0.5
+  first_layer_channels: 128
+  hidden_channels: 64
+  input_drop: 0.0
+  n_fp_layers: 2
+  n_mlp_layers: 2
+  pooling: mean
+  rep_dim: 64
+  residual: false
+  rm_semantic_fusion: true

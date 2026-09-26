@@ -1,0 +1,38 @@
+run_info:
+  out_dir: outputs/20260716-single-internaltx-comparison-ronin2-omni-nomad-polyn-qubit-harmony-thor123-meter-ronin1/train_epochs100_augment2_lr0.005_nosf_es15_ts0.0_202607171539/inference_xchainwatcher-test-ronin1-nomad-recall_202607171542
+  run_datetime: '2026-07-17T15:42:41'
+  checkpoint_dir: outputs/20260716-single-internaltx-comparison-ronin2-omni-nomad-polyn-qubit-harmony-thor123-meter-ronin1/train_epochs100_augment2_lr0.005_nosf_es15_ts0.0_202607171539/models
+dataset:
+  type: single
+  path: outputs/20260716-single-internaltx-comparison-ronin2-omni-nomad-polyn-qubit-harmony-thor123-meter-ronin1/_dataset_test
+  stats:
+    total_samples: 732
+    normal_samples: 563
+    anomaly_samples: 169
+    anomaly_ratio: 0.2309
+    bridges:
+    - name: nomad
+      num_samples: 730
+      normal_samples: 563
+      anomaly_samples: 167
+      anomaly_ratio: 0.2288
+      bridge_ratio: 0.9973
+    - name: ronin1
+      num_samples: 2
+      normal_samples: 0
+      anomaly_samples: 2
+      anomaly_ratio: 1.0
+      bridge_ratio: 0.0027
+params:
+  act: relu
+  att_drop: 0.0
+  dropout: 0.5
+  first_layer_channels: 128
+  hidden_channels: 64
+  input_drop: 0.0
+  n_fp_layers: 2
+  n_mlp_layers: 2
+  out_channels: 2
+  pooling: mean
+  residual: false
+  rm_semantic_fusion: true

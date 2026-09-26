@@ -1,0 +1,14 @@
+bridge,tx_hash,true_label,fold_1,fold_2,fold_3,fold_4,fold_5
+qubit,73,0,0,1,0,0,1
+qubit,86,1,1,1,1,1,1
+qubit,87,1,1,1,1,1,1
+qubit,88,1,1,1,1,1,1
+qubit,89,1,1,1,1,1,1
+qubit,90,1,1,1,1,1,1
+qubit,91,1,1,1,1,1,1
+qubit,92,1,1,1,1,1,1
+qubit,93,1,1,1,1,1,1
+thorchain2,1,1,1,1,1,1,1
+thorchain3,11,1,1,1,1,1,1
+thorchain3,12,1,1,1,1,1,1
+thorchain3,13,1,1,1,1,1,1

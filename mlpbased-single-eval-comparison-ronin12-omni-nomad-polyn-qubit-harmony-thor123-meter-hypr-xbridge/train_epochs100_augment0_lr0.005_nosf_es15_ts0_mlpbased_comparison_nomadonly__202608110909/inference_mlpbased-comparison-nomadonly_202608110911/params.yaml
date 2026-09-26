@@ -1,0 +1,32 @@
+run_info:
+  out_dir: /home/gonca/Documents/GitHub/IST-Thesis/BridgeDefender/outputs/mlpbased-single-eval-comparison-ronin12-omni-nomad-polyn-qubit-harmony-thor123-meter-hypr-xbridge/train_epochs100_augment0_lr0.005_nosf_es15_ts0_mlpbased_comparison_nomadonly__202608110909/inference_mlpbased-comparison-nomadonly_202608110911
+  run_datetime: '2026-08-11T09:11:24'
+  checkpoint_dir: /home/gonca/Documents/GitHub/IST-Thesis/BridgeDefender/outputs/mlpbased-single-eval-comparison-ronin12-omni-nomad-polyn-qubit-harmony-thor123-meter-hypr-xbridge/train_epochs100_augment0_lr0.005_nosf_es15_ts0_mlpbased_comparison_nomadonly__202608110909/models
+dataset:
+  type: single
+  path: /home/gonca/Documents/GitHub/IST-Thesis/BridgeDefender/outputs/mlpbased-single-eval-comparison-ronin12-omni-nomad-polyn-qubit-harmony-thor123-meter-hypr-xbridge/_dataset_test_nomadonly
+  stats:
+    total_samples: 730
+    normal_samples: 563
+    anomaly_samples: 167
+    anomaly_ratio: 0.2288
+    bridges:
+    - name: nomad
+      num_samples: 730
+      normal_samples: 563
+      anomaly_samples: 167
+      anomaly_ratio: 0.2288
+      bridge_ratio: 1.0
+params:
+  act: relu
+  att_drop: 0.0
+  dropout: 0.5
+  first_layer_channels: 128
+  hidden_channels: 64
+  input_drop: 0.0
+  n_fp_layers: 2
+  n_mlp_layers: 2
+  out_channels: 2
+  pooling: mean
+  residual: false
+  rm_semantic_fusion: true

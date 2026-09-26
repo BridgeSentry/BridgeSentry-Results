@@ -1,0 +1,15 @@
+=== K-Fold test summary (mean ± std across folds) ===
+  Test loss                  4.5224 ± 6.4693
+  Accuracy                   0.9275 ± 0.0283
+  Precision  (normal)        0.9955 ± 0.0060
+  Recall     (normal)        0.9139 ± 0.0401
+  F1-score   (normal)        0.9524 ± 0.0196
+  Precision  (anomaly)       0.7511 ± 0.0892
+  Recall     (anomaly)       0.9824 ± 0.0235
+  F1-score   (anomaly)       0.8472 ± 0.0492
+  F2-score   (anomaly)       0.9220 ± 0.0159
+  ROC-AUC                    0.9715 ± 0.0108
+  PR-AUC                     0.8782 ± 0.0360
+  MCC                        0.8171 ± 0.0553
+  Decision threshold         0.1492 ± 0.1833
+  Avg fold training time     93.60s ± 44.95s

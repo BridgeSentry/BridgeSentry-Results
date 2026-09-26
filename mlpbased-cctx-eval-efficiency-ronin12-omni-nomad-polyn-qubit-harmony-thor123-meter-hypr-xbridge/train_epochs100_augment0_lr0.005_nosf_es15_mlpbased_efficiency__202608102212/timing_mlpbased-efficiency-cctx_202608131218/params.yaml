@@ -1,0 +1,11 @@
+run_info:
+  out_dir: /home/gonca/Documents/GitHub/IST-Thesis/BridgeDefender/outputs/mlpbased-cctx-eval-efficiency-ronin12-omni-nomad-polyn-qubit-harmony-thor123-meter-hypr-xbridge/train_epochs100_augment0_lr0.005_nosf_es15_mlpbased_gnncomparison__202608102212/timing_mlpbased-efficiency-cctx_202608131218
+  run_datetime: '2026-08-13T12:18:32'
+  checkpoint_dir: /home/gonca/Documents/GitHub/IST-Thesis/BridgeDefender/outputs/mlpbased-cctx-eval-efficiency-ronin12-omni-nomad-polyn-qubit-harmony-thor123-meter-hypr-xbridge/train_epochs100_augment0_lr0.005_nosf_es15_mlpbased_gnncomparison__202608102212/models
+  device: cpu
+  fold: 1
+  warmup_batches: 5
+  repeats: 3
+dataset:
+  type: cctx
+  path: /home/gonca/Documents/GitHub/IST-Thesis/BridgeDefender/outputs/mlpbased-cctx-eval-efficiency-ronin12-omni-nomad-polyn-qubit-harmony-thor123-meter-hypr-xbridge/_dataset

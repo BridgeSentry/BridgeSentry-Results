@@ -1,0 +1,12 @@
+=== K-Fold test summary (mean ± std across folds) ===
+  Test loss                  0.1035 ± 0.0866
+  Accuracy                   0.9932 ± 0.0060
+  Precision  (normal)        0.9931 ± 0.0061
+  Recall     (normal)        1.0000 ± 0.0000
+  F1-score   (normal)        0.9965 ± 0.0031
+  Precision  (anomaly)       1.0000 ± 0.0000
+  Recall     (anomaly)       0.7429 ± 0.2286
+  F1-score   (anomaly)       0.8321 ± 0.1557
+  ROC-AUC                    1.0000 ± 0.0000
+  PR-AUC                     1.0000 ± 0.0000
+  MCC                        0.8486 ± 0.1378

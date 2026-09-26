@@ -1,0 +1,44 @@
+run_info:
+  out_dir: outputs/20260802-cctx-cctx-deepsad-ronin12-omni-nomad-polyn-qubit-harmony-thor123-meter/train_epochs100_augment0_lr0.005_nosf_es15_ts0.0_202608021628/inference_lr0.005-xscope_202608021646
+  run_datetime: '2026-08-02T16:46:44'
+  checkpoint_dir: outputs/20260802-cctx-cctx-deepsad-ronin12-omni-nomad-polyn-qubit-harmony-thor123-meter/train_epochs100_augment0_lr0.005_nosf_es15_ts0.0_202608021628/models
+dataset:
+  type: cctx
+  path: outputs/20260802-cctx-cctx-deepsad-ronin12-omni-nomad-polyn-qubit-harmony-thor123-meter/_dataset_test_xscope
+  stats:
+    total_samples: 35
+    normal_samples: 11
+    anomaly_samples: 24
+    anomaly_ratio: 0.6857
+    bridges:
+    - name: qubit
+      num_samples: 27
+      normal_samples: 11
+      anomaly_samples: 16
+      anomaly_ratio: 0.5926
+      bridge_ratio: 0.7714
+    - name: thorchain3
+      num_samples: 6
+      normal_samples: 0
+      anomaly_samples: 6
+      anomaly_ratio: 1.0
+      bridge_ratio: 0.1714
+    - name: thorchain2
+      num_samples: 2
+      normal_samples: 0
+      anomaly_samples: 2
+      anomaly_ratio: 1.0
+      bridge_ratio: 0.0571
+params:
+  act: relu
+  att_drop: 0.0
+  dropout: 0.5
+  first_layer_channels: 128
+  hidden_channels: 64
+  input_drop: 0.0
+  n_fp_layers: 2
+  n_mlp_layers: 2
+  pooling: mean
+  rep_dim: 64
+  residual: false
+  rm_semantic_fusion: true

@@ -1,0 +1,82 @@
+run_info:
+  out_dir: /home/gonca/Documents/GitHub/IST-Thesis/BridgeDefender/outputs/20260712-cctx-internaltx-clean-ronin2-omni-nomad-polyn-qubit-harmony-thor123-meter-ronin1/train_epochs100_augment2_lr0.005_es15_seed41_202607121517
+  run_datetime: '2026-07-12T15:17:18'
+params:
+  act: relu
+  att_drop: 0.0
+  augment_factor: 2
+  dropout: 0.5
+  early_stopping: 15
+  first_layer_channels: 128
+  gpu: cpu
+  hidden_channels: 64
+  input_drop: 0.0
+  k_folds: 5
+  learning_rate: 0.005
+  n_fp_layers: 2
+  n_mlp_layers: 2
+  num_epochs: 100
+  num_workers: 0
+  pooling: mean
+  random_seed: 41
+  residual: false
+dataset:
+  type: cctx
+  path: /home/gonca/Documents/GitHub/IST-Thesis/BridgeDefender/outputs/20260712-cctx-internaltx-clean-ronin2-omni-nomad-polyn-qubit-harmony-thor123-meter-ronin1/_dataset
+  stats:
+    total_samples: 1233
+    normal_samples: 1149
+    anomaly_samples: 84
+    anomaly_ratio: 0.0681
+    bridges:
+    - name: omnibridge
+      num_samples: 664
+      normal_samples: 663
+      anomaly_samples: 1
+      anomaly_ratio: 0.0015
+      bridge_ratio: 0.5385
+    - name: ronin
+      num_samples: 292
+      normal_samples: 292
+      anomaly_samples: 0
+      anomaly_ratio: 0.0
+      bridge_ratio: 0.2368
+    - name: polynetwork
+      num_samples: 199
+      normal_samples: 144
+      anomaly_samples: 55
+      anomaly_ratio: 0.2764
+      bridge_ratio: 0.1614
+    - name: nomad
+      num_samples: 47
+      normal_samples: 47
+      anomaly_samples: 0
+      anomaly_ratio: 0.0
+      bridge_ratio: 0.0381
+    - name: qubit
+      num_samples: 19
+      normal_samples: 3
+      anomaly_samples: 16
+      anomaly_ratio: 0.8421
+      bridge_ratio: 0.0154
+    - name: thorchain3
+      num_samples: 6
+      normal_samples: 0
+      anomaly_samples: 6
+      anomaly_ratio: 1.0
+      bridge_ratio: 0.0049
+    - name: meterio
+      num_samples: 4
+      normal_samples: 0
+      anomaly_samples: 4
+      anomaly_ratio: 1.0
+      bridge_ratio: 0.0032
+    - name: thorchain2
+      num_samples: 2
+      normal_samples: 0
+      anomaly_samples: 2
+      anomaly_ratio: 1.0
+      bridge_ratio: 0.0016
+dme:
+  dme_threshold: 0.5
+  reported_metapaths: 469

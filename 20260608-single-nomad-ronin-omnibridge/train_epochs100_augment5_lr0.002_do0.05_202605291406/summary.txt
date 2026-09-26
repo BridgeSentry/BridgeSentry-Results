@@ -1,0 +1,21 @@
+=== K-Fold test summary (mean ± std across folds) ===
+  Test loss                  0.0944 ± 0.0116
+  Accuracy                   0.9661 ± 0.0049
+  Precision  (normal)        0.9904 ± 0.0017
+  Recall     (normal)        0.9725 ± 0.0071
+  F1-score   (normal)        0.9813 ± 0.0028
+  Precision  (anomaly)       0.7502 ± 0.0435
+  Recall     (anomaly)       0.8960 ± 0.0196
+  F1-score   (anomaly)       0.8154 ± 0.0182
+  ROC-AUC                    0.9845 ± 0.0063
+  PR-AUC                     0.9144 ± 0.0173
+  MCC                        0.8015 ± 0.0171
+
+Reducing dropout risks losing model accuracy.
+Precision on anomaly class is reduced. Recall is higher.
+Only metric that ends up performing better is the loss value...
+Overall, doesn't seem like increasing model dropout is worth doing.
+
+After investigating accuracy/precision/recall averages for different
+dropouts in validation data over epochs, the results end up being the
+same. Thus, reducing dropout might be detrimental to model training.

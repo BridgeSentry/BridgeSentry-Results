@@ -1,0 +1,91 @@
+run_info:
+  out_dir: outputs/20260806-cctx-internaltx-final-ronin12-omni-nomad-polyn-qubit-harmony-thor123-meter-hypr-xbridge/train_epochs100_augment0_lr0.002_poolmean_max_nosf_es15_deepsadbased_tuningpooling__202608062103
+  run_datetime: '2026-08-06T21:03:28'
+params:
+  act: relu
+  ae_pretrain: false
+  att_drop: 0.0
+  augment_factor: 0
+  deep_sad_eps: 1.0
+  dme_threshold: 0.5
+  dropout: 0.5
+  early_stopping: 15
+  eta: 1.0
+  first_layer_channels: 128
+  gpu: cpu
+  grad_clip: 1.0
+  hidden_channels: 64
+  input_drop: 0.0
+  k_folds: 5
+  learning_rate: 0.002
+  n_fp_layers: 2
+  n_mlp_layers: 2
+  num_epochs: 100
+  num_workers: 0
+  pooling: mean_max
+  random_seed: 42
+  rep_dim: 64
+  residual: false
+  rm_semantic_fusion: true
+  test_split: 0.15
+  weight_decay: 1.0e-06
+dataset:
+  type: cctx
+  path: outputs/20260806-cctx-internaltx-final-ronin12-omni-nomad-polyn-qubit-harmony-thor123-meter-hypr-xbridge/_dataset
+  stats:
+    total_samples: 1241
+    normal_samples: 1157
+    anomaly_samples: 84
+    anomaly_ratio: 0.0677
+    bridges:
+    - name: omnibridge
+      num_samples: 664
+      normal_samples: 663
+      anomaly_samples: 1
+      anomaly_ratio: 0.0015
+      bridge_ratio: 0.5351
+    - name: ronin
+      num_samples: 292
+      normal_samples: 292
+      anomaly_samples: 0
+      anomaly_ratio: 0.0
+      bridge_ratio: 0.2353
+    - name: polynetwork
+      num_samples: 199
+      normal_samples: 144
+      anomaly_samples: 55
+      anomaly_ratio: 0.2764
+      bridge_ratio: 0.1604
+    - name: nomad
+      num_samples: 47
+      normal_samples: 47
+      anomaly_samples: 0
+      anomaly_ratio: 0.0
+      bridge_ratio: 0.0379
+    - name: qubit
+      num_samples: 27
+      normal_samples: 11
+      anomaly_samples: 16
+      anomaly_ratio: 0.5926
+      bridge_ratio: 0.0218
+    - name: thorchain3
+      num_samples: 6
+      normal_samples: 0
+      anomaly_samples: 6
+      anomaly_ratio: 1.0
+      bridge_ratio: 0.0048
+    - name: meterio
+      num_samples: 4
+      normal_samples: 0
+      anomaly_samples: 4
+      anomaly_ratio: 1.0
+      bridge_ratio: 0.0032
+    - name: thorchain2
+      num_samples: 2
+      normal_samples: 0
+      anomaly_samples: 2
+      anomaly_ratio: 1.0
+      bridge_ratio: 0.0016
+dme:
+  dme_threshold: 0.5
+  reported_metapaths: 499

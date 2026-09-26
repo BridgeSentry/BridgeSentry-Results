@@ -1,0 +1,17 @@
+act: relu
+att_drop: 0.0
+augment_factor: 5
+dropout: 0.5
+early_stopping: false
+first_layer_channels: 128
+gpu: cpu
+hidden_channels: 64
+input_drop: 0.0
+kfolds: 5
+learning_rate: 0.01
+n_fp_layers: 2
+n_mlp_layers: 2
+num_epochs: 100
+num_workers: 0
+pooling: mean
+residual: false

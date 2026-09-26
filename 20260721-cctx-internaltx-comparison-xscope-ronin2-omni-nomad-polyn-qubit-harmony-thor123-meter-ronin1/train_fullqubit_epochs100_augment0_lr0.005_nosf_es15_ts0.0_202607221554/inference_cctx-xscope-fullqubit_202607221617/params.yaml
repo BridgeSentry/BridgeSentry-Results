@@ -1,0 +1,32 @@
+run_info:
+  out_dir: outputs/20260721-cctx-internaltx-comparison-xscope-ronin2-omni-nomad-polyn-qubit-harmony-thor123-meter-ronin1/train_fullqubit_epochs100_augment0_lr0.005_nosf_es15_ts0.0_202607221554/inference_cctx-xscope-fullqubit_202607221617
+  run_datetime: '2026-07-22T16:17:32'
+  checkpoint_dir: outputs/20260721-cctx-internaltx-comparison-xscope-ronin2-omni-nomad-polyn-qubit-harmony-thor123-meter-ronin1/train_fullqubit_epochs100_augment0_lr0.005_nosf_es15_ts0.0_202607221554/models
+dataset:
+  type: cctx
+  path: outputs/20260721-cctx-internaltx-comparison-xscope-ronin2-omni-nomad-polyn-qubit-harmony-thor123-meter-ronin1/train_fullqubit_epochs100_augment0_lr0.005_nosf_es15_ts0.0_202607221554/_dataset_test_fullqubit
+  stats:
+    total_samples: 19
+    normal_samples: 3
+    anomaly_samples: 16
+    anomaly_ratio: 0.8421
+    bridges:
+    - name: qubit
+      num_samples: 19
+      normal_samples: 3
+      anomaly_samples: 16
+      anomaly_ratio: 0.8421
+      bridge_ratio: 1.0
+params:
+  act: relu
+  att_drop: 0.0
+  dropout: 0.5
+  first_layer_channels: 128
+  hidden_channels: 64
+  input_drop: 0.0
+  n_fp_layers: 2
+  n_mlp_layers: 2
+  out_channels: 2
+  pooling: mean
+  residual: false
+  rm_semantic_fusion: true
